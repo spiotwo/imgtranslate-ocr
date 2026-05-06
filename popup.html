@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Translator</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <span id="status">Loading…</span>
+    <span class="spacer"></span>
+    <label class="toggle">
+      <input type="checkbox" id="toggleNotes" checked>
+      <span>Show note boxes</span>
+    </label>
+    <button id="copyAll" title="Copy all translations">Copy text</button>
+  </header>
+
+  <main>
+    <!-- Image translation view -->
+    <div id="stage">
+      <img id="img" alt="">
+      <div id="notes"></div>
+      <div id="tooltip" class="imgtr-note-body" hidden></div>
+    </div>
+    <section id="segments" hidden>
+      <h3>Groups</h3>
+      <ol id="segList"></ol>
+    </section>
+
+    <!-- Plain selection-fallback view (used only if content script can't run) -->
+    <div id="textFallback" hidden>
+      <h2 id="textHeader">Translation</h2>
+      <div id="textOrig"></div>
+      <div id="textResult">Translating…</div>
+    </div>
+  </main>
+
+  <script src="lens-bundle.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

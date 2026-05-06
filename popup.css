@@ -1,0 +1,132 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; font-family: system-ui, -apple-system, sans-serif; color: #222; background: #fafafa; }
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  font-size: 13px;
+}
+header .spacer { flex: 1; }
+header button {
+  font: inherit;
+  padding: 4px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+header button:hover { background: #f0f0f0; }
+header .toggle { display: flex; align-items: center; gap: 4px; cursor: pointer; user-select: none; }
+
+#status { color: #666; }
+#status.error { color: #c00; }
+#status.done { color: #2a7; }
+
+main {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#stage {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  max-width: 100%;
+}
+#img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#notes {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* danbooru-style note box: subtle cream rectangle with thin border that you
+   hover to reveal the translation. Always-visible-but-faint by default. */
+.imgtr-note-box {
+  position: absolute;
+  border: 1px solid #1a1a1a;
+  background: rgba(255, 250, 215, 0.18);
+  pointer-events: auto;
+  cursor: help;
+  transition: background 80ms ease;
+  /* slight offset so the border lies just outside the text */
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.imgtr-note-box:hover,
+.imgtr-note-box.active {
+  background: rgba(255, 250, 215, 0.55);
+  z-index: 5;
+}
+
+/* Tooltip body — adapted from Danbooru's --note-body styling.
+   Background: #ffffee, black 1px border, soft shadow. */
+.imgtr-note-body {
+  position: absolute;
+  background: #ffffee;
+  color: #111;
+  border: 1px solid #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  padding: 6px 8px;
+  min-width: 140px;
+  max-width: 360px;
+  font-size: 13px;
+  line-height: 1.35;
+  z-index: 50;
+  pointer-events: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 2px;
+}
+.imgtr-note-body .src {
+  color: #888;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+#segments {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+#segments h3 { margin: 0 0 8px; font-size: 14px; }
+#segList { margin: 0; padding-left: 20px; }
+#segList li { margin-bottom: 8px; }
+#segList .src { color: #888; }
+#segList .arrow { color: #ccc; margin: 0 6px; }
+
+/* Selection-fallback view (only used if content script couldn't run). */
+#textFallback {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 4px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+#textFallback h2 { margin: 0 0 8px; font-size: 14px; color: #666; }
+#textFallback #textOrig {
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #eee;
+}
+#textFallback #textResult { font-size: 14px; white-space: pre-wrap; }

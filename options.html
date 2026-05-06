@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Translator (OCR) settings</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; padding: 16px; min-width: 320px; color: #222; }
+  h2 { margin: 0 0 12px; font-size: 16px; }
+  label { display: block; margin: 14px 0 4px; font-size: 13px; font-weight: 600; }
+  select { width: 100%; padding: 6px 8px; font-size: 14px; }
+  .note { font-size: 12px; color: #666; margin-top: 4px; line-height: 1.4; }
+  .status { color: #2a7; font-size: 12px; margin-top: 14px; min-height: 1em; }
+</style>
+</head>
+<body>
+  <h2>Image Translator (OCR)</h2>
+
+  <label for="targetLang">Target language</label>
+  <select id="targetLang">
+    <option value="en">English</option>
+    <option value="ru">Russian</option>
+    <option value="uk">Ukrainian</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="it">Italian</option>
+    <option value="pt">Portuguese</option>
+    <option value="nl">Dutch</option>
+    <option value="pl">Polish</option>
+    <option value="tr">Turkish</option>
+    <option value="ja">Japanese</option>
+    <option value="zh-CN">Chinese (Simplified)</option>
+    <option value="zh-TW">Chinese (Traditional)</option>
+    <option value="ko">Korean</option>
+    <option value="ar">Arabic</option>
+    <option value="hi">Hindi</option>
+    <option value="he">Hebrew</option>
+    <option value="vi">Vietnamese</option>
+    <option value="th">Thai</option>
+  </select>
+  <div class="note">
+    Used as the translation target for both image OCR and selected text. Source language is auto-detected per request.
+  </div>
+
+  <label class="checkbox-label" style="display: flex; align-items: center; gap: 8px; margin-top: 18px; font-weight: 600; cursor: pointer;">
+    <input type="checkbox" id="showSelectionIcon">
+    <span>Show translate icon next to selected text</span>
+  </label>
+  <div class="note">
+    When you select text on a page, a small icon appears at the end of the selection. Click it to translate. Right-click → Translate works either way.
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

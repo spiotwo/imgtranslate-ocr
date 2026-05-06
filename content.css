@@ -1,0 +1,120 @@
+/* All styles are scoped to #__imgtr_selection_panel__ to avoid clashing with
+   the host page. We use !important sparingly — only on properties the host
+   page is most likely to override (font, color, position). */
+
+#__imgtr_selection_panel__.imgtr-panel {
+  all: initial;
+  position: absolute !important;
+  z-index: 2147483647;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 13px !important;
+  color: #222 !important;
+  background: #ffffff !important;
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  width: 320px;
+  max-width: 90vw;
+  padding: 0;
+  line-height: 1.4;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+#__imgtr_selection_panel__ * {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-header {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  background: #f7f7f7;
+  border-radius: 6px 6px 0 0;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-title {
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex: 1;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-close {
+  all: unset;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  border-radius: 4px;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-close:hover {
+  background: #e6e6e6;
+  color: #222;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-orig {
+  padding: 8px 10px 6px;
+  font-size: 12px;
+  color: #888;
+  max-height: 90px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  border-bottom: 1px dashed #eee;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-result {
+  padding: 8px 10px 10px;
+  font-size: 14px;
+  color: #111;
+  max-height: 240px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+#__imgtr_selection_panel__ .imgtr-panel-result.imgtr-error {
+  color: #c0392b;
+}
+
+/* --- Selection icon (small "translate" button next to fresh selections) --- */
+
+#__imgtr_selection_icon__ {
+  all: initial;
+  position: absolute !important;
+  z-index: 2147483646;
+  width: 22px;
+  height: 22px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  color: #555;
+  user-select: none;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  transition: transform 80ms ease, color 80ms ease, border-color 80ms ease;
+}
+
+#__imgtr_selection_icon__:hover {
+  color: #1a73e8;
+  border-color: #1a73e8;
+  transform: scale(1.08);
+}
+
+#__imgtr_selection_icon__ svg {
+  display: block;
+  pointer-events: none;
+}

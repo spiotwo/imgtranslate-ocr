@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Image Translator (OCR)",
+  "version": "2.3",
+  "description": "Right-click to translate. Works on images (OCR + overlay) and selected text (inline panel). Selection icon for one-click translation.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": ["contextMenus", "storage", "tabs", "webRequest", "webRequestBlocking"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "imgtranslate-ocr@local.dev",
+      "strict_min_version": "115.0"
+    }
+  }
+}

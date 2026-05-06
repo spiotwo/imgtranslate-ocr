@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="2.2" markerHeight="2.2" orient="auto">
+      <path d="m0 0 10 5-10 5z" fill="#fff"/>
+    </marker>
+  </defs>
+  <rect width="96" height="96" rx="20" ry="20" fill="#1a73e8"/>
+  <path d="m11 50 12-36h8l12 36h-8l-3-10H22l-3 10Zm13-17h6l-3-11Z" fill="#fff"/>
+  <path d="M43 22c25-16 26 2 25 14" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" marker-end="url(#a)"/>
+  <path d="M85 50H71v-2a2 2 0 0 0-4 0v2H53a2 2 0 0 0 0 4h23.764a29 29 0 0 1-7.881 15.905 28.85 28.85 0 0 1-6.555-10.564 2 2 0 0 0-3.777 1.318 32.8 32.8 0 0 0 7.36 11.917 28.6 28.6 0 0 1-11.538 5.47A2 2 0 0 0 54.799 82a2 2 0 0 0 .43-.046 32.6 32.6 0 0 0 13.662-6.638 32.8 32.8 0 0 0 13.683 6.638 2 2 0 0 0 .852-3.908 28.8 28.8 0 0 1-11.58-5.467A32.96 32.96 0 0 0 80.786 54H85a2 2 0 0 0 0-4Z" stroke-width="4.2" fill="none" stroke="#fff" stroke-linecap="round"/>
+</svg>
