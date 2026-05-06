@@ -78,6 +78,7 @@ right-click or icon click → fetch translation → render compact panel.
 - The grouping heuristic works well for speech bubbles, paragraphs, and
   most manga / comics layouts. It can be wrong for unusual layouts (curved
   text, graffiti, heavily stylized fonts).
+- lens-bundle.js contains the public API key shipped with Chromium itself, which is what chrome-lens-ocr uses to call Google Lens. This is not a secret; it's embedded in every copy of the Chrome browser and is subject to server-side referrer and quota restrictions imposed by Google.
 
 ## Building
 
