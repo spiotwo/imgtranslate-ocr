@@ -3556,7 +3556,7 @@
     return ne || (ne = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.LensOverlayPhaseLatenciesMetadata", null, d), i.exportSymbol("proto.lens.LensOverlayPhaseLatenciesMetadata.ImageType", null, d), i.exportSymbol("proto.lens.LensOverlayPhaseLatenciesMetadata.Phase", null, d), i.exportSymbol("proto.lens.LensOverlayPhaseLatenciesMetadata.Phase.ImageDownscaleData", null, d), i.exportSymbol("proto.lens.LensOverlayPhaseLatenciesMetadata.Phase.ImageEncodeData", null, d), i.exportSymbol("proto.lens.LensOverlayPhaseLatenciesMetadata.Phase.PhaseDataCase", null, d), proto.lens.LensOverlayPhaseLatenciesMetadata = function(a) {
         e.Message.initialize(this, a, 0, -1, proto.lens.LensOverlayPhaseLatenciesMetadata.repeatedFields_, null);
       }, i.inherits(proto.lens.LensOverlayPhaseLatenciesMetadata, e.Message), i.DEBUG && !COMPILED && (proto.lens.LensOverlayPhaseLatenciesMetadata.displayName = "proto.lens.LensOverlayPhaseLatenciesMetadata"), proto.lens.LensOverlayPhaseLatenciesMetadata.Phase = function(a) {
@@ -3823,7 +3823,7 @@
     return re || (re = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ Ne();
+      }.call(null) || globalThis, a = /* @__PURE__ */ Ne();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.LensOverlayClientLogs", null, d), i.exportSymbol("proto.lens.LensOverlayClientLogs.LensOverlayEntryPoint", null, d), proto.lens.LensOverlayClientLogs = function(t) {
         e.Message.initialize(this, t, 0, -1, null, null);
       }, i.inherits(proto.lens.LensOverlayClientLogs, e.Message), i.DEBUG && !COMPILED && (proto.lens.LensOverlayClientLogs.displayName = "proto.lens.LensOverlayClientLogs"), e.Message.GENERATE_TO_OBJECT && (proto.lens.LensOverlayClientLogs.prototype.toObject = function(t) {
@@ -3957,7 +3957,7 @@
     return oe || (oe = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.LensOverlayRoutingInfo", null, d), proto.lens.LensOverlayRoutingInfo = function(a) {
         e.Message.initialize(this, a, 0, -1, null, null);
       }, i.inherits(proto.lens.LensOverlayRoutingInfo, e.Message), i.DEBUG && !COMPILED && (proto.lens.LensOverlayRoutingInfo.displayName = "proto.lens.LensOverlayRoutingInfo"), e.Message.GENERATE_TO_OBJECT && (proto.lens.LensOverlayRoutingInfo.prototype.toObject = function(a) {
@@ -4050,7 +4050,7 @@
     return ae || (ae = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.AppliedFilter", null, d), i.exportSymbol("proto.lens.AppliedFilter.FilterPayloadCase", null, d), i.exportSymbol("proto.lens.AppliedFilter.Translate", null, d), i.exportSymbol("proto.lens.AppliedFilters", null, d), i.exportSymbol("proto.lens.LensOverlayFilterType", null, d), proto.lens.AppliedFilter = function(a) {
         e.Message.initialize(this, a, 0, -1, null, proto.lens.AppliedFilter.oneofGroups_);
       }, i.inherits(proto.lens.AppliedFilter, e.Message), i.DEBUG && !COMPILED && (proto.lens.AppliedFilter.displayName = "proto.lens.AppliedFilter"), proto.lens.AppliedFilter.Translate = function(a) {
@@ -4251,7 +4251,7 @@
     return se || (se = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.Platform", null, d), proto.lens.Platform = {
         PLATFORM_UNSPECIFIED: 0,
         PLATFORM_WEB: 3,
@@ -4265,7 +4265,7 @@
     return ie || (ie = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.Surface", null, d), proto.lens.Surface = {
         SURFACE_UNSPECIFIED: 0,
         SURFACE_CHROMIUM: 4,
@@ -4278,7 +4278,7 @@
     return le || (le = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ Ce();
+      }.call(null) || globalThis, a = /* @__PURE__ */ Ce();
       i.object.extend(proto, a);
       var t = /* @__PURE__ */ Ue();
       i.object.extend(proto, t);
@@ -4627,7 +4627,7 @@
     return pe || (pe = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ H();
+      }.call(null) || globalThis, a = /* @__PURE__ */ H();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.LensOverlayClusterInfo", null, d), proto.lens.LensOverlayClusterInfo = function(t) {
         e.Message.initialize(this, t, 0, -1, null, null);
       }, i.inherits(proto.lens.LensOverlayClusterInfo, e.Message), i.DEBUG && !COMPILED && (proto.lens.LensOverlayClusterInfo.displayName = "proto.lens.LensOverlayClusterInfo"), e.Message.GENERATE_TO_OBJECT && (proto.lens.LensOverlayClusterInfo.prototype.toObject = function(t) {
@@ -4723,7 +4723,7 @@
     return ue || (ue = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.CoordinateType", null, d), i.exportSymbol("proto.lens.Polygon", null, d), i.exportSymbol("proto.lens.Polygon.Vertex", null, d), i.exportSymbol("proto.lens.Polygon.VertexOrdering", null, d), proto.lens.Polygon = function(a) {
         e.Message.initialize(this, a, 0, -1, proto.lens.Polygon.repeatedFields_, null);
       }, i.inherits(proto.lens.Polygon, e.Message), i.DEBUG && !COMPILED && (proto.lens.Polygon.displayName = "proto.lens.Polygon"), proto.lens.Polygon.Vertex = function(a) {
@@ -4890,7 +4890,7 @@
     return de || (de = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ Qe();
+      }.call(null) || globalThis, a = /* @__PURE__ */ Qe();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.CenterRotatedBox", null, d), i.exportSymbol("proto.lens.Geometry", null, d), i.exportSymbol("proto.lens.ZoomedCrop", null, d), proto.lens.CenterRotatedBox = function(t) {
         e.Message.initialize(this, t, 0, -1, null, null);
       }, i.inherits(proto.lens.CenterRotatedBox, e.Message), i.DEBUG && !COMPILED && (proto.lens.CenterRotatedBox.displayName = "proto.lens.CenterRotatedBox"), proto.lens.Geometry = function(t) {
@@ -5206,7 +5206,7 @@
     return ye || (ye = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ R();
+      }.call(null) || globalThis, a = /* @__PURE__ */ R();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.Alignment", null, d), i.exportSymbol("proto.lens.Text", null, d), i.exportSymbol("proto.lens.TextEntityIdentifier", null, d), i.exportSymbol("proto.lens.TextLayout", null, d), i.exportSymbol("proto.lens.TextLayout.Line", null, d), i.exportSymbol("proto.lens.TextLayout.Paragraph", null, d), i.exportSymbol("proto.lens.TextLayout.Word", null, d), i.exportSymbol("proto.lens.TextLayout.Word.FormulaMetadata", null, d), i.exportSymbol("proto.lens.TextLayout.Word.Type", null, d), i.exportSymbol("proto.lens.WritingDirection", null, d), proto.lens.Text = function(t) {
         e.Message.initialize(this, t, 0, -1, null, null);
       }, i.inherits(proto.lens.Text, e.Message), i.DEBUG && !COMPILED && (proto.lens.Text.displayName = "proto.lens.Text"), proto.lens.TextLayout = function(t) {
@@ -5776,7 +5776,7 @@
     return ge || (ge = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ me();
+      }.call(null) || globalThis, a = /* @__PURE__ */ me();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.DeepGleamData", null, d), i.exportSymbol("proto.lens.DeepGleamData.RenderingOneofCase", null, d), i.exportSymbol("proto.lens.TranslationData", null, d), i.exportSymbol("proto.lens.TranslationData.BackgroundImageData", null, d), i.exportSymbol("proto.lens.TranslationData.BackgroundImageData.FileFormat", null, d), i.exportSymbol("proto.lens.TranslationData.Line", null, d), i.exportSymbol("proto.lens.TranslationData.Line.Word", null, d), i.exportSymbol("proto.lens.TranslationData.Status", null, d), i.exportSymbol("proto.lens.TranslationData.Status.Code", null, d), i.exportSymbol("proto.lens.TranslationData.TextStyle", null, d), proto.lens.DeepGleamData = function(t) {
         e.Message.initialize(this, t, 0, -1, proto.lens.DeepGleamData.repeatedFields_, proto.lens.DeepGleamData.oneofGroups_);
       }, i.inherits(proto.lens.DeepGleamData, e.Message), i.DEBUG && !COMPILED && (proto.lens.DeepGleamData.displayName = "proto.lens.DeepGleamData"), proto.lens.TranslationData = function(t) {
@@ -6538,7 +6538,7 @@
     return ce || (ce = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.LensOverlayDocument", null, d), i.exportSymbol("proto.lens.Page", null, d), proto.lens.LensOverlayDocument = function(a) {
         e.Message.initialize(this, a, 0, -1, proto.lens.LensOverlayDocument.repeatedFields_, null);
       }, i.inherits(proto.lens.LensOverlayDocument, e.Message), i.DEBUG && !COMPILED && (proto.lens.LensOverlayDocument.displayName = "proto.lens.LensOverlayDocument"), proto.lens.Page = function(a) {
@@ -6667,7 +6667,7 @@
     return fe || (fe = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.ClientImage", null, d), proto.lens.ClientImage = function(a) {
         e.Message.initialize(this, a, 0, -1, null, null);
       }, i.inherits(proto.lens.ClientImage, e.Message), i.DEBUG && !COMPILED && (proto.lens.ClientImage.displayName = "proto.lens.ClientImage"), e.Message.GENERATE_TO_OBJECT && (proto.lens.ClientImage.prototype.toObject = function(a) {
@@ -6735,7 +6735,7 @@
     return he || (he = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ R();
+      }.call(null) || globalThis, a = /* @__PURE__ */ R();
       i.object.extend(proto, a);
       var t = /* @__PURE__ */ Ye();
       i.object.extend(proto, t), i.exportSymbol("proto.lens.ImageCrop", null, d), proto.lens.ImageCrop = function(n) {
@@ -6832,7 +6832,7 @@
     return ve || (ve = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ R();
+      }.call(null) || globalThis, a = /* @__PURE__ */ R();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.ImageData", null, d), i.exportSymbol("proto.lens.ImageMetadata", null, d), i.exportSymbol("proto.lens.ImagePayload", null, d), proto.lens.ImageData = function(t) {
         e.Message.initialize(this, t, 0, -1, proto.lens.ImageData.repeatedFields_, null);
       }, i.inherits(proto.lens.ImageData, e.Message), i.DEBUG && !COMPILED && (proto.lens.ImageData.displayName = "proto.lens.ImageData"), proto.lens.ImagePayload = function(t) {
@@ -7056,7 +7056,7 @@
     return Oe || (Oe = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.TextQuery", null, d), proto.lens.TextQuery = function(a) {
         e.Message.initialize(this, a, 0, -1, null, null);
       }, i.inherits(proto.lens.TextQuery, e.Message), i.DEBUG && !COMPILED && (proto.lens.TextQuery.displayName = "proto.lens.TextQuery"), e.Message.GENERATE_TO_OBJECT && (proto.lens.TextQuery.prototype.toObject = function(a) {
@@ -7128,7 +7128,7 @@
     return Me || (Me = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ R();
+      }.call(null) || globalThis, a = /* @__PURE__ */ R();
       i.object.extend(proto, a);
       var t = /* @__PURE__ */ Xe();
       i.object.extend(proto, t), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.QueryMetadata", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.SelectionMetadata", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.SelectionMetadata.Object", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.SelectionMetadata.Point", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.SelectionMetadata.Region", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.SelectionMetadata.SelectionCase", null, d), i.exportSymbol("proto.lens.LensOverlayInteractionRequestMetadata.Type", null, d), proto.lens.LensOverlayInteractionRequestMetadata = function(n) {
@@ -7554,7 +7554,7 @@
     return Le || (Le = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ R();
+      }.call(null) || globalThis, a = /* @__PURE__ */ R();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.OverlayObject", null, d), i.exportSymbol("proto.lens.OverlayObject.InteractionProperties", null, d), i.exportSymbol("proto.lens.OverlayObject.RenderingMetadata", null, d), i.exportSymbol("proto.lens.OverlayObject.RenderingMetadata.RenderType", null, d), proto.lens.OverlayObject = function(t) {
         e.Message.initialize(this, t, 0, -1, null, null);
       }, i.inherits(proto.lens.OverlayObject, e.Message), i.DEBUG && !COMPILED && (proto.lens.OverlayObject.displayName = "proto.lens.OverlayObject"), proto.lens.OverlayObject.RenderingMetadata = function(t) {
@@ -7780,7 +7780,7 @@
     return be || (be = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ H();
+      }.call(null) || globalThis, a = /* @__PURE__ */ H();
       i.object.extend(proto, a), i.exportSymbol("proto.lens.LensOverlayRequestId", null, d), proto.lens.LensOverlayRequestId = function(t) {
         e.Message.initialize(this, t, 0, -1, null, null);
       }, i.inherits(proto.lens.LensOverlayRequestId, e.Message), i.DEBUG && !COMPILED && (proto.lens.LensOverlayRequestId.displayName = "proto.lens.LensOverlayRequestId"), e.Message.GENERATE_TO_OBJECT && (proto.lens.LensOverlayRequestId.prototype.toObject = function(t) {
@@ -7941,7 +7941,7 @@
     return Re || (Re = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.RequestType", null, d), proto.lens.RequestType = {
         REQUEST_TYPE_DEFAULT: 0,
         REQUEST_TYPE_PDF: 1,
@@ -7955,7 +7955,7 @@
     return Te || (Te = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ De();
+      }.call(null) || globalThis, a = /* @__PURE__ */ De();
       i.object.extend(proto, a);
       var t = /* @__PURE__ */ $e();
       i.object.extend(proto, t);
@@ -9250,7 +9250,7 @@
     return Fe || (Fe = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")(), a = /* @__PURE__ */ Ae();
+      }.call(null) || globalThis, a = /* @__PURE__ */ Ae();
       i.object.extend(proto, a);
       var t = /* @__PURE__ */ H();
       i.object.extend(proto, t);
@@ -9626,7 +9626,7 @@
     return Be || (Be = 1, function(c) {
       var e = import_google_protobuf.default, i = e, d = typeof globalThis < "u" && globalThis || typeof window < "u" && window || typeof d < "u" && d || typeof self < "u" && self || function() {
         return this;
-      }.call(null) || Function("return this")();
+      }.call(null) || globalThis;
       i.exportSymbol("proto.lens.ClientPlatform", null, d), proto.lens.ClientPlatform = {
         CLIENT_PLATFORM_UNSPECIFIED: 0,
         CLIENT_PLATFORM_LENS_OVERLAY: 2
