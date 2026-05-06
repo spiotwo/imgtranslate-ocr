@@ -22,11 +22,11 @@ translations show in a compact inline panel. No account, no API key.
 
 ### Temporary install for development
 
-1. Clone this repo or download the latest release.
-2. In Firefox, open `about:debugging` → **This Firefox** → **Load Temporary Add-on** → select `manifest.json`.
+1. Clone this repo or download and unzip the latest release.
+2. In Firefox, open `about:debugging` → **This Firefox** → **Load Temporary Add-on** → select `manifest.json` in the project folder.
 
 The temporary install is removed when Firefox restarts. For permanent local
-install, build a signed `.xpi` via the AMO submit-and-self-distribute flow.
+install, build a signed `.xpi` via the mozilla addons submit-and-self-distribute flow.
 
 ## How it works
 
