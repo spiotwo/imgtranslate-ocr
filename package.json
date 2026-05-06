@@ -1,6 +1,6 @@
 {
   "name": "image-translator-ocr",
-  "version": "2.3.2",
+  "version": "1.0.1",
   "private": true,
   "description": "Firefox extension. Build script bundles chrome-lens-ocr into lens-bundle.js.",
   "scripts": {
