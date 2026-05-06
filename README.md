@@ -20,10 +20,6 @@ translations show in a compact inline panel. No account, no API key.
 
 ## Install
 
-### From AMO
-
-TBD - waiting for approval
-
 ### Temporary install for development
 
 1. Clone this repo or download the latest release.
