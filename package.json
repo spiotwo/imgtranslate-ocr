@@ -1,10 +1,10 @@
 {
   "name": "image-translator-ocr",
-  "version": "2.3.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Firefox extension. Build script bundles chrome-lens-ocr into lens-bundle.js.",
   "scripts": {
-    "build": "esbuild entry.mjs --bundle --format=iife --outfile=lens-bundle.js --target=firefox115"
+    "build": "esbuild entry.mjs --bundle --format=iife --outfile=lens-bundle.js --target=firefox140"
   },
   "dependencies": {
     "@rxliuli/chrome-lens-ocr": "4.1.1"

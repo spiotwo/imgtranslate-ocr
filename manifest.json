@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Image Translator (OCR)",
-  "version": "2.3",
+  "version": "1.0.1",
   "description": "Right-click to translate. Works on images (OCR + overlay) and selected text (inline panel). Selection icon for one-click translation.",
   "icons": {
     "16": "icons/icon-16.png",
@@ -32,7 +32,10 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "imgtranslate-ocr@local.dev",
-      "strict_min_version": "115.0"
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["websiteContent"]
+      }
     }
   }
 }

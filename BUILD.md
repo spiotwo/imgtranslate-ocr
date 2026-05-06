@@ -28,7 +28,7 @@ From the extracted source code directory:
 
 ```bash
 npm ci
-npx esbuild entry.mjs --bundle --format=iife --outfile=lens-bundle.js --target=firefox115
+npx esbuild entry.mjs --bundle --format=iife --outfile=lens-bundle.js --target=firefox140
 ```
 
 The first command installs the exact versions of `@rxliuli/chrome-lens-ocr`
